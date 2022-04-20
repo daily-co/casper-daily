@@ -1,0 +1,12 @@
+<div class="site-nav-mobile-container" style="display:none">
+    {{> "site-search-mobile"}}
+    <div class="site-nav-mobile-ctas">
+        <a href="https://www.daily.co/" class="button button-white" alt="Visit Daily.co">Back to daily.co</a>
+        <a href="https://dashboard.daily.co/signup" class="button" alt="Sign Up Button" id="nav-signup">Sign up for free</a>
+    </div>
+    <div class="site-nav-mobile-content">
+        {{#if @site.navigation}}
+            {{navigation}}
+        {{/if}}
+    </div>
+</div>

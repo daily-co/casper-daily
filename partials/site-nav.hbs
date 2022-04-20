@@ -1,0 +1,31 @@
+<nav class="site-nav">
+    <div class="site-nav-left-wrapper">
+        <div class="site-nav-left">
+                <a class="site-nav-logo" href="{{@site.url}}"></a>
+            <div class="site-nav-content">
+                {{#if @site.navigation}}
+                    {{navigation}}
+                {{/if}}
+                {{#is "post"}}
+                    <span class="nav-post-title {{#unless @site.logo}}dash{{/unless}}">{{post.title}}</span>
+                {{/is}}
+            </div>
+        </div>
+
+        <div class="site-nav-right">
+            <div class="site-nav-right-ctas">
+                <a href="https://www.daily.co/" class="button button-white" alt="Visit Daily.co">Back to daily.co</a>
+                <a href="https://dashboard.daily.co/signup" class="button" alt="Sign Up Button" id="nav-signup">Sign up for free</a>
+            </div>
+        </div>
+        <div class="site-nav-mobile">
+            <a href="#" class="search-icon">
+                {{> "icons/search"}}
+            </a>
+            <a href="#" class="menu-icon">
+                {{> "icons/burger"}}
+            </a>
+        </div>
+    </div>
+
+</nav>

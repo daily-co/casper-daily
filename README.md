@@ -4,7 +4,7 @@ Casper is the default theme for [Ghost](http://github.com/tryghost/ghost/). At D
 
 # Local development
 
-You will need two things to run the Daily blog locally: a local Ghost install, and this theme. For info on how to get a local Ghost instance, [follow this guide](https://ghost.org/docs/install/local/). Then, you'll need to clone this theme in *a separate directory*. For example:
+You will need two things to run the Daily blog locally: a local Ghost install, and this theme. For info on how to get a local Ghost instance, [follow this guide](https://ghost.org/docs/install/local/). Then, you'll need to clone this theme in _a separate directory_. For example:
 
 ```bash
 -- My Code Folder
@@ -14,7 +14,7 @@ You will need two things to run the Daily blog locally: a local Ghost install, a
 
 To connect the two -- i.e. run Ghost locally with the casper-daily theme active -- we need to create a symlink between this repo's directory and `content/themes/casper-daily` wherever you install Ghost. To do this, run the following commands (assuming this repo and your local Ghost install are in adjacent directories like above):
 
-```bash 
+```bash
 cd local-ghost-install/content/themes
 ln -s ../../../casper-daily casper-daily
 ```
@@ -32,6 +32,7 @@ From the admin page, create a local Ghost account. Once signed in, go to Setting
 <img width="1287" alt="Screenshot 2022-04-20 at 10 53 05" src="https://user-images.githubusercontent.com/12814720/164191671-b62c8e87-f7d1-48a1-a4c0-9b46e3d81a4e.png">
 
 # Importing existing blog content
+
 When you first set up the blog locally, it will display placeholder content.
 
 To instead use the blog's real current content, you will need to:
@@ -41,6 +42,7 @@ To instead use the blog's real current content, you will need to:
 3. Finally, import the existing blog content by uploading the JSON file you've received. If you view the site again, you should see the updated content.
 
 # Creating pull requests
+
 Because this is a fork, you need to make sure to select the right base repository when opening a pull request for this repo:
 
 <img width="441" alt="Screenshot 2022-04-20 at 10 56 55" src="https://user-images.githubusercontent.com/12814720/164191712-8e3bb8fd-1c30-484a-844f-eac1e97352a1.png">
@@ -48,6 +50,7 @@ Because this is a fork, you need to make sure to select the right base repositor
 If you don't, you'll accidentally open a PR in the original repo :D
 
 # Theme development
+
 Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
@@ -72,13 +75,11 @@ yarn zip
 - Autoprefixer - Don't worry about writing browser prefixes of any kind, it's all done automatically with support for the latest 2 major versions of every browser.
 - [Color Mod](https://github.com/jonathantneal/postcss-color-mod-function)
 
-
 # SVG Icons
 
 Casper uses inline SVG icons, included via Handlebars partials. You can find all icons inside `/partials/icons`. To use an icon just include the name of the relevant file, eg. To include the SVG icon in `/partials/icons/rss.hbs` - use `{{> "icons/rss"}}`.
 
 You can add your own SVG icons in the same manner.
-
 
 # Copyright & License
 
