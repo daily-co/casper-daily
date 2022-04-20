@@ -27,7 +27,9 @@ ghost start
 
 This command will return a URL for your local admin page. (e.g. http://localhost:2368/ghost/)
 
-From the admin page, create a local Ghost account. Once signed in, go to Settings > Design > Change theme (sidebar, on the bottom) > Advanced > Activate casper (casper-daily).
+From the admin page, create a local Ghost account. Once signed in, go to Settings > Design > Change theme (sidebar, on the bottom) > Advanced > Activate casper (casper-daily):
+
+<img width="1287" alt="Screenshot 2022-04-20 at 10 53 05" src="https://user-images.githubusercontent.com/12814720/164191671-b62c8e87-f7d1-48a1-a4c0-9b46e3d81a4e.png">
 
 # Importing existing blog content
 When you first set up the blog locally, it will display placeholder content.
@@ -40,6 +42,8 @@ To instead use the blog's real current content, you will need to:
 
 # Creating pull requests
 Because this is a fork, you need to make sure to select the right base repository when opening a pull request for this repo:
+
+<img width="441" alt="Screenshot 2022-04-20 at 10 56 55" src="https://user-images.githubusercontent.com/12814720/164191712-8e3bb8fd-1c30-484a-844f-eac1e97352a1.png">
 
 If you don't, you'll accidentally open a PR in the original repo :D
 
