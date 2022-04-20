@@ -1,37 +1,49 @@
-# Casper
+# casper-daily (fork of Casper)
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/). This is the latest development version of Casper! If you're just looking to download the latest release, head over to the [releases](https://github.com/TryGhost/Casper/releases) page.
+Casper is the default theme for [Ghost](http://github.com/tryghost/ghost/). At Daily, we've built our blog's theme on Casper. We've forked the original repo to make sure we can keep up with the latest updates.
 
-&nbsp;
+# Local development
 
-![screenshot-desktop](https://user-images.githubusercontent.com/353959/66987533-40eae100-f0c1-11e9-822e-cbaf38fb8e3f.png)
+You will need two things to run the Daily blog locally: a local Ghost install, and this theme. For info on how to get a local Ghost instance, [follow this guide](https://ghost.org/docs/install/local/). Then, you'll need to clone this theme in *a separate directory*. For example:
 
-&nbsp;
+```bash
+-- My Code Folder
+  -- casper-daily
+  -- local-ghost-install
+```
 
-# First time using a Ghost theme?
+To connect the two -- i.e. run Ghost locally with the casper-daily theme active -- we need to create a symlink between this repo's directory and `content/themes/casper-daily` wherever you install Ghost. To do this, run the following commands (assuming this repo and your local Ghost install are in adjacent directories like above):
 
-Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
+```bash 
+cd local-ghost-install/content/themes
+ln -s ../../../casper-daily casper-daily
+```
 
-This theme has lots of code comments to help explain what's going on just by reading the code. Once you feel comfortable with how everything works, we also have full [theme API documentation](https://ghost.org/docs/themes/) which explains every possible Handlebars helper and template.
+Once you've confirmed this worked, run the following from your local Ghost directory:
 
-**The main files are:**
+```bash
+ghost start
+```
 
-- `default.hbs` - The parent template file, which includes your global header/footer
-- `index.hbs` - The main template to generate a list of posts, usually the home page
-- `post.hbs` - The template used to render individual posts
-- `page.hbs` - Used for individual pages
-- `tag.hbs` - Used for tag archives, eg. "all posts tagged with `news`"
-- `author.hbs` - Used for author archives, eg. "all posts written by Jamie"
+This command will return a URL for your local admin page. (e.g. http://localhost:2368/ghost/)
 
-One neat trick is that you can also create custom one-off templates by adding the slug of a page to a template file. For example:
+From the admin page, create a local Ghost account. Once signed in, go to Settings > Design > Change theme (sidebar, on the bottom) > Advanced > Activate casper (casper-daily).
 
-- `page-about.hbs` - Custom template for an `/about/` page
-- `tag-news.hbs` - Custom template for `/tag/news/` archive
-- `author-ali.hbs` - Custom template for `/author/ali/` archive
+# Importing existing blog content
+When you first set up the blog locally, it will display placeholder content.
 
+To instead use the blog's real current content, you will need to:
 
-# Development
+1. Ask a DevRel team member to provide a current export of the blog's content (a JSON file).
+2. Once you have that content, go to Settings > Labs and under Migration Options, delete the content currently used.
+3. Finally, import the existing blog content by uploading the JSON file you've received. If you view the site again, you should see the updated content.
 
+# Creating pull requests
+Because this is a fork, you need to make sure to select the right base repository when opening a pull request for this repo:
+
+If you don't, you'll accidentally open a PR in the original repo :D
+
+# Theme development
 Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
 ```bash
