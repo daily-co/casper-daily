@@ -38,6 +38,11 @@ To instead use the blog's real current content, you will need to:
 2. Once you have that content, go to Settings > Labs and under Migration Options, delete the content currently used.
 3. Finally, import the existing blog content by uploading the JSON file you've received. If you view the site again, you should see the updated content.
 
+# Creating pull requests
+Because this is a fork, you need to make sure to select the right base repository when opening a pull request for this repo:
+
+If you don't, you'll accidentally open a PR in the original repo :D
+
 # Theme development
 Casper styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need [Node](https://nodejs.org/), [Yarn](https://yarnpkg.com/) and [Gulp](https://gulpjs.com) installed globally. After that, from the theme's root directory:
 
