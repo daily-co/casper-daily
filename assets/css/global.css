@@ -15,6 +15,9 @@
   --graylight: #e6eaef;
   --graylightest: #f7f9fa;
   --white: #ffffff;
+  --midgrey: hotpink;
+  --whitegrey: yellow;
+  --darkgrey: cornflowerblue;
 }
 
 /* Reset
@@ -212,7 +215,7 @@ select {
 }
 button,
 html input[type="button"],
-    /* 1 */
+  /* 1 */
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer; /* 3 */
