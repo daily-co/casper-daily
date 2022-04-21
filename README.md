@@ -1,6 +1,6 @@
 # casper-daily-theme (fork of Casper)
 
-Casper is the default theme for [Ghost](http://github.com/tryghost/ghost/). At Daily, we've built our blog's theme on Casper. We've forked the original repo to make sure we can keep up with the latest updates.
+Casper is the default theme for [Ghost](http://github.com/tryghost/ghost/). At Daily, we've built our blog's theme on Casper. We've forked the original repo to make sure we can keep up with the latest updates. This theme is intended to work on Ghost v4.44.0 and up.
 
 # Local development
 
