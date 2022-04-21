@@ -1,7 +1,7 @@
-# Ignore artifacts:
 build
 coverage
 assets/built
+js/lib/ghost-finder
 
 # Ignore all hbs files:
 *.hbs

@@ -1,6 +1,6 @@
-# casper-daily (fork of Casper)
+# casper-daily-theme (fork of Casper)
 
-Casper is the default theme for [Ghost](http://github.com/tryghost/ghost/). At Daily, we've built our blog's theme on Casper. We've forked the original repo to make sure we can keep up with the latest updates.
+Casper is the default theme for [Ghost](http://github.com/tryghost/ghost/). At Daily, we've built our blog's theme on Casper. We've forked the original repo to make sure we can keep up with the latest updates. This theme is intended to work on Ghost v4.44.0 and up.
 
 # Local development
 
@@ -8,15 +8,15 @@ You will need two things to run the Daily blog locally: a local Ghost install, a
 
 ```bash
 -- My Code Folder
-  -- casper-daily
+  -- casper-daily-theme
   -- local-ghost-install
 ```
 
-To connect the two -- i.e. run Ghost locally with the casper-daily theme active -- we need to create a symlink between this repo's directory and `content/themes/casper-daily` wherever you install Ghost. To do this, run the following commands (assuming this repo and your local Ghost install are in adjacent directories like above):
+To connect the two -- i.e. run Ghost locally with the casper-daily theme active -- we need to create a symlink between this repo's directory and `content/themes/casper-daily-theme` wherever you install Ghost. To do this, run the following commands (assuming this repo and your local Ghost install are in adjacent directories like above):
 
 ```bash
 cd local-ghost-install/content/themes
-ln -s ../../../casper-daily casper-daily
+ln -s ../../../casper-daily-theme casper-daily-theme
 ```
 
 Once you've confirmed this worked, run the following from your local Ghost directory:
@@ -27,9 +27,11 @@ ghost start
 
 This command will return a URL for your local admin page. (e.g. http://localhost:2368/ghost/)
 
-From the admin page, create a local Ghost account. Once signed in, go to Settings > Design > Change theme (sidebar, on the bottom) > Advanced > Activate casper (casper-daily):
+From the admin page, create a local Ghost account. Once signed in, go to Settings > Design > Change theme (sidebar, on the bottom) > Advanced > Activate casper (casper-daily-theme):
 
-<img width="1287" alt="Screenshot 2022-04-20 at 10 53 05" src="https://user-images.githubusercontent.com/12814720/164191671-b62c8e87-f7d1-48a1-a4c0-9b46e3d81a4e.png">
+<img width="562" alt="Screenshot 2022-04-21 at 11 19 39" src="https://user-images.githubusercontent.com/12814720/164423171-b66cc1f3-848e-4d53-b4fa-8dd2576ad387.png">
+
+Once you have Ghost running, you also need to run `yarn dev` inside the `casper-daily-theme` folder to pick up changes in the CSS, JS and templates.
 
 # Importing existing blog content
 
@@ -45,7 +47,7 @@ To instead use the blog's real current content, you will need to:
 
 Because this is a fork, you need to make sure to select the right base repository when opening a pull request for this repo:
 
-<img width="441" alt="Screenshot 2022-04-20 at 10 56 55" src="https://user-images.githubusercontent.com/12814720/164191712-8e3bb8fd-1c30-484a-844f-eac1e97352a1.png">
+<img width="880" alt="Screenshot 2022-04-21 at 11 21 12" src="https://user-images.githubusercontent.com/12814720/164423619-4017c310-b695-4c50-9b2b-5be2a3ed31d6.png">
 
 If you don't, you'll accidentally open a PR in the original repo :D
 
