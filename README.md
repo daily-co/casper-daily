@@ -1,6 +1,6 @@
 # casper-daily-theme (fork of Casper)
 
-Casper is the default theme for [Ghost](http://github.com/tryghost/ghost/). At Daily, we've built our blog's theme on Casper. We've forked the original repo to make sure we can keep up with the latest updates.
+Casper is the default theme for [Ghost](http://github.com/tryghost/ghost/). At Daily, we've built our blog's theme on Casper. We've forked the original repo to make sure we can keep up with the latest updates. This theme is intended to work on Ghost v4.44.0 and up.
 
 # Local development
 
@@ -12,11 +12,11 @@ You will need two things to run the Daily blog locally: a local Ghost install, a
   -- local-ghost-install
 ```
 
-To connect the two -- i.e. run Ghost locally with the casper-daily theme active -- we need to create a symlink between this repo's directory and `content/themes/casper-daily` wherever you install Ghost. To do this, run the following commands (assuming this repo and your local Ghost install are in adjacent directories like above):
+To connect the two -- i.e. run Ghost locally with the casper-daily theme active -- we need to create a symlink between this repo's directory and `content/themes/casper-daily-theme` wherever you install Ghost. To do this, run the following commands (assuming this repo and your local Ghost install are in adjacent directories like above):
 
 ```bash
 cd local-ghost-install/content/themes
-ln -s ../../../casper-daily-theme casper-daily
+ln -s ../../../casper-daily-theme casper-daily-theme
 ```
 
 Once you've confirmed this worked, run the following from your local Ghost directory:
