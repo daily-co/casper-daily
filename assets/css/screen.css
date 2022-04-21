@@ -1847,7 +1847,7 @@ Usage (In Ghost editor):
 .author-card .author-info p {
   margin: 4px 0 0;
   /*color: color(var(--midgrey) l(-10%));*/
-  color: var(--midgrey);
+  color: var(--white);
 }
 
 .author-card .author-info .bio h2 {
@@ -1920,6 +1920,8 @@ Usage (In Ghost editor):
 }
 
 /* 7.2. Members Subscribe Form
+I don't think any of this is used?
+ */
 /* ---------------------------------------------------------- */
 .subscribe-form {
   margin: 1.5em 0;
@@ -1945,7 +1947,7 @@ Usage (In Ghost editor):
 
 .subscribe-form-description {
   margin-bottom: 0.2em 0 1em;
-  color: var(--midgrey);
+  color: var(--graylight);
   font-size: 2.1rem;
   line-height: 1.55em;
 }
@@ -1970,7 +1972,7 @@ Usage (In Ghost editor):
   width: 100%;
   /*border: color(var(--graylight) l(+7%)) 1px solid;*/
   border: var(--graylight) 1px solid;
-  color: var(--midgrey);
+  color: var(--graylight);
   font-size: 1.8rem;
   line-height: 1em;
   font-weight: normal;
