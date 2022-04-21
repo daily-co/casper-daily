@@ -29,7 +29,9 @@ This command will return a URL for your local admin page. (e.g. http://localhost
 
 From the admin page, create a local Ghost account. Once signed in, go to Settings > Design > Change theme (sidebar, on the bottom) > Advanced > Activate casper (casper-daily-theme):
 
-<img width="1287" alt="Screenshot 2022-04-20 at 10 53 05" src="https://user-images.githubusercontent.com/12814720/164191671-b62c8e87-f7d1-48a1-a4c0-9b46e3d81a4e.png">
+<img width="562" alt="Screenshot 2022-04-21 at 11 19 39" src="https://user-images.githubusercontent.com/12814720/164423171-b66cc1f3-848e-4d53-b4fa-8dd2576ad387.png">
+
+Once you have Ghost running, you also need to run `yarn dev` inside the `casper-daily-theme` folder to pick up changes in the CSS, JS and templates.
 
 # Importing existing blog content
 
