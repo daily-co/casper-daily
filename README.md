@@ -47,7 +47,7 @@ To instead use the blog's real current content, you will need to:
 
 Because this is a fork, you need to make sure to select the right base repository when opening a pull request for this repo:
 
-<img width="441" alt="Screenshot 2022-04-20 at 10 56 55" src="https://user-images.githubusercontent.com/12814720/164191712-8e3bb8fd-1c30-484a-844f-eac1e97352a1.png">
+<img width="880" alt="Screenshot 2022-04-21 at 11 21 12" src="https://user-images.githubusercontent.com/12814720/164423619-4017c310-b695-4c50-9b2b-5be2a3ed31d6.png">
 
 If you don't, you'll accidentally open a PR in the original repo :D
 
