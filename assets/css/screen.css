@@ -71,7 +71,7 @@ body {
 }
 
 .button-white {
-  border: 1px solid #C8D1DC;
+  border: 1px solid var(--gray);
   background-color: var(--white);
 }
 
@@ -608,7 +608,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     margin-left: calc(100% - 375px);
     position: absolute;
     justify-content: end;
-    background: #FFF;
+    background: var(--white);
     border-left: 1px solid var(--gray);
   }
 }
@@ -708,8 +708,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .search-input {
   width: 100%;
-  /* background: #FFFFFF; */
-  border: 1px solid #C8D1DC;
+  border: 1px solid var(--gray);
   box-sizing: border-box;
   border-radius: 8px;
   height: 44px;
@@ -749,7 +748,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .search-result-title {
   font-size: 14px;
   line-height: 22px;
-  color: #121A24;
+  color: var(--bluedark);
 }
 
 .search-result-meta {
@@ -774,7 +773,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
   top: 0;
   left: 0;
   right: 0;
-  background:#C8D1DC;
+  background: var(--gray);
   opacity: 0.6;
 }
 
@@ -3046,7 +3045,7 @@ Usage (In Ghost editor):
   justify-content: center;
   align-items: center;
   height: 32px;
-  color: #fff;
+  color: var(--white);
   font-family: GraphikMedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -3066,7 +3065,7 @@ Usage (In Ghost editor):
 }
 
 .banner-link, .banner-link:hover {
-  color: #fff;
+  color: var(--white);
   font-family: GraphikMedium, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -3091,7 +3090,7 @@ Usage (In Ghost editor):
   }
 
   .search-input {
-    color: #000;
+    color: var(--black);
   }
 
   .site-nav-mobile-container {
@@ -3254,16 +3253,16 @@ Usage (In Ghost editor):
   }
 
   .post-full-content strong {
-    color: #fff;
+    color: var(--white);
   }
 
   .post-full-content em {
-    color: #fff;
+    color: var(--white);
   }
 
   .post-full-content code {
-    color: #fff;
-    background: #000;
+    color: var(--white);
+    color: var(--black);
   }
 
   hr {
@@ -3299,7 +3298,7 @@ Usage (In Ghost editor):
   }
 
   .kg-bookmark-title {
-    color: #fff;
+    color: var(--white);
   }
 
   .kg-bookmark-description {
