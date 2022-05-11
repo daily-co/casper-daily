@@ -2,7 +2,7 @@
   "name": "casper-daily-theme",
   "description": "A clean, minimal default theme for the Ghost publishing platform",
   "demo": "https://demo.ghost.io",
-  "version": "4.7.4",
+  "version": "4.7.5",
   "engines": {
     "ghost": ">=4.0.0"
   },
@@ -91,12 +91,6 @@
       "xl": {
         "width": 2000
       }
-    "name": "casper",
-    "description": "A clean, minimal default theme for the Ghost publishing platform",
-    "demo": "https://demo.ghost.io",
-    "version": "4.7.5",
-    "engines": {
-        "ghost": ">=4.0.0"
     },
     "card_assets": true
   },
