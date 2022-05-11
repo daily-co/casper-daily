@@ -3262,7 +3262,7 @@ Usage (In Ghost editor):
 
     .post-full-content code {
         color: var(--white);
-        color: var(--black);
+        background: var(--black);
     }
 
     hr {
