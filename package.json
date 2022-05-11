@@ -17,6 +17,7 @@
     "test": "gscan .",
     "test:ci": "gscan --fatal --verbose .",
     "pretest": "gulp build",
+    "build": "gulp build",
     "preship": "yarn test",
     "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; else echo \"Uncomitted changes found.\" && exit 1; fi",
     "postship": "git fetch && gulp release",
