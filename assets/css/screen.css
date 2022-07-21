@@ -3080,6 +3080,10 @@ Usage (In Ghost editor):
         color: var(--white);
         background-color: var(--bluedark);
     }
+    
+    ::selection {
+        background-color: var(--greydark);
+    }
 
     svg {
         fill: var(--white);
@@ -3170,7 +3174,7 @@ Usage (In Ghost editor):
 
     .author-avatar,
     .static-avatar {
-        border-color: var(--darkgrey);
+        border-color: var(--greydark);
     }
 
     .site-main,
