@@ -1525,6 +1525,7 @@ Usage (In Ghost editor):
 
 .post-full-content hr {
     margin: 2em 0;
+    overflow: visible;
 }
 
 .post-full-content hr:after {
@@ -3206,7 +3207,10 @@ Usage (In Ghost editor):
 
     .post-full-content {
         background-color: var(--bluedark);
-
+    }
+  
+    .post-full-content hr:after {
+        box-shadow: var(--bluedark) 0 0 0 5px;
     }
 
     .post-full-custom-excerpt {
@@ -3224,6 +3228,10 @@ Usage (In Ghost editor):
 
     .post-full-byline {
         border-top: 1px solid var(--blue);
+    }
+  
+    .post-full-content blockquote {
+        border-left-color: var(--bluelight);
     }
 
     .post-full-byline-meta h4 a {
