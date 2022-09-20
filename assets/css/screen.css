@@ -1258,7 +1258,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     overflow: hidden;
     margin: 25px 0 50px;
     width: 100%;
-    background: var(--graylight);
+    background: inherit;
     border-radius: 4px;
 }
 
@@ -3223,7 +3223,7 @@ Usage (In Ghost editor):
     }
 
     .post-full-image {
-        background-color: var(--blue);
+        background-color: inherit;
     }
 
     .post-full-byline {
