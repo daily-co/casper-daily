@@ -1,0 +1,22 @@
+name: Stage Theme
+on:
+  push:
+    branches:
+      - staging
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+      - run: yarn install
+      - run: yarn build
+      - run: yarn test
+      - name: Stage Ghost Theme
+        uses: TryGhost/action-deploy-theme@v1.4.0
+        with:
+          api-url: ${{ secrets.GHOST_ADMIN_STAGING_API_URL }}
+          api-key: ${{ secrets.GHOST_ADMIN_STAGING_API_KEY }}
+          theme-name: casper-daily-theme
