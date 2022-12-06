@@ -18,12 +18,12 @@ into the {body} of the default.hbs template --}}
 
                 <header class="post-full-header">
 
-                    {{#if primary_tag}}
-                        <section class="blog-tag">
-                            {{#primary_tag}}
-                                <a href="{{url}}">{{name}}</a>
-                            {{/primary_tag}}
-                        </section>
+                    {{#if tags}}
+                        {{#foreach tags}}
+                        <div class="blog-tag">
+                            <a href="{{url}}">{{name}}</a>
+                        </div>
+                        {{/foreach}}
                     {{/if}}
 
                     <h1 class="post-full-title">{{title}}</h1>
