@@ -959,7 +959,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .blog-tag {
     color: var(--bluedark);
     font-size: 1.2rem;
-    margin: 0 0 1em;
+    margin: 0 .5rem 1em 0;
     border: 1px solid var(--gray);
     background-color: var(--graylightest);
     display: inline-block;
